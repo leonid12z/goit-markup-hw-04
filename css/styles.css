@@ -169,9 +169,20 @@ p {
 .hero {
   text-align: center;
   padding: 200px 0;
-  /* height: 600px; */
-
+  /* background-image: linear-gradient: rgba(47, 48, 58, 0,4)); */
   background-color: var(--background-color);
+}
+
+.hero {
+  max-width: 1600px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url("../images/zaglavnay.img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*Эффективное решение*/
@@ -213,6 +224,27 @@ p {
 }
 
 /*Внимание к деталям и текст*/
+
+.section-desc::before {
+  display: block;
+  content: "";
+  height: 120px;
+
+  margin-bottom: 30px;
+  background: var(--color-brand);
+
+  /* background-image: url(../images/antenna.svg); */
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* outline: 1px solid red; */
+}
+
+.section-desc:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
 .section {
   padding: 94px 0;
 }
