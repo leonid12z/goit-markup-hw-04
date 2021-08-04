@@ -11,6 +11,7 @@
   --color-brand: #f5f4fa;
   --color-strip: #eeeeee;
   --color-border: #ececec;
+  --color-fill: rgba(245, 244, 250, 1);
 }
 
 body {
@@ -169,7 +170,7 @@ p {
 .hero {
   text-align: center;
   padding: 200px 0;
-  /* background-image: linear-gradient: rgba(47, 48, 58, 0,4)); */
+  /* background-image: linear-gradient: rgba(47, 48, 58, 0,4); */
   background-color: var(--background-color);
 }
 
@@ -225,13 +226,13 @@ p {
 
 /*Внимание к деталям и текст*/
 
-.section-desc::before {
+.list-item::before {
   display: block;
   content: "";
   height: 120px;
 
   margin-bottom: 30px;
-  background: var(--color-brand);
+  background: var(--color-fill);
 
   /* background-image: url(../images/antenna.svg); */
 
@@ -241,8 +242,26 @@ p {
   /* outline: 1px solid red; */
 }
 
-.section-desc:nth-child(1)::before {
+/* Значки-svg+hover */
+
+/* .list-item:hover {
+  background: var(--primary-text-color);
+} */
+
+.list-item:nth-child(1)::before {
   background-image: url(../images/antenna.svg);
+}
+
+.list-item:nth-child(2)::before {
+  background-image: url(../images/clok.svg);
+}
+
+.list-item:nth-child(3)::before {
+  background-image: url(../images/komp.svg);
+}
+
+.list-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .section {
@@ -318,6 +337,19 @@ p {
   align-items: center;
   justify-content: space-between;
 }
+
+/* .text {
+  background-image: url(../images/instagram.svg);
+   display: block;
+  content: "";
+  padding: 32px 30px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-bottom: 30px;
+  outline: 1px solid red; 
+} */
 
 .pic-team {
   background: var(--brand-color);
