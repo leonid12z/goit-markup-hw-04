@@ -335,21 +335,36 @@ p {
 
 .userpic {
   display: flex;
-  content: "";
-  padding: 32px 30px;
+  justify-content: center;
 
-  justify-content: space-between;
-  background-repeat: no-repeat;
-  background-position: center;
-
+  margin-top: 16px;
   /* outline: 1px solid red;   */
 }
 
+.userpic .userpic-our:not(:last-child) {
+  margin-right: 10px;
+}
+
 .userpic-our {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
 
-  color: var(--fill-color);
+  border-radius: 50%;
+  border: none;
+
+  background: var(--brand-color);
+  fill: var(--fill-color);
+
+  cursor: pointer;
+}
+
+.userpic-our:hover {
+  background: var(--primary-text-color);
+  fill: var(--brand-color);
 }
 
 .pic-team {
@@ -389,13 +404,16 @@ p {
 /* Постоянные клиены */
 .thumb {
   display: flex;
-  content: "";
 
   justify-content: space-between;
-  list-style: none;
 }
 
 .icon-pic {
+  cursor: pointer;
+  justify-content: center;
+
+  padding: 15px 0;
+
   fill: var(--fill-color);
 }
 
@@ -407,7 +425,7 @@ p {
   border-radius: 4px;
 }
 
-/* Нижняя часть инфорсации */
+/* Нижняя часть информации */
 .footer {
   background-color: var(--background-color);
   padding: 60px 0;
@@ -457,6 +475,26 @@ p {
 
   color: var(--color-backs);
 }
+
+/* Присоединяйтесь */
+
+.desc-text {
+  font-weight: bold;
+
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--brand-color);
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .desc-linc{
+  display: flex;
+} */
 
 /*ПАРТФОЛИО-html*/
 /*Кнопки*/
