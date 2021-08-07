@@ -152,6 +152,19 @@ p {
   color: var(--accent-color);
 }
 
+/* Мыло и телефон */
+
+.icon-item{
+  margin-left: 10px;
+  cursor:pointer;
+  fill: var(--back-color);
+}
+
+.icon-item:hover{
+  fill: var(--primary-text-color);
+}
+
+
 /*info@devstudio.com*/
 .information {
   font-weight: 500;
@@ -171,8 +184,8 @@ p {
 .hero {
   text-align: center;
   padding: 200px 0;
-  /* background-image: linear-gradient: rgba(47, 48, 58, 0,4); */
-  background-color: var(--background-color);
+   
+  background-color: var(--background-color);  
 }
 
 .hero {
@@ -181,10 +194,12 @@ p {
   margin-left: auto;
   margin-right: auto;
 
-  background-image: url("../images/zaglavnay.img.jpg");
+  /* background-image: linear-gradient( rgba(47, 48, 58, 0,4);  */
+
+  background-image: url("../images/zaglavnay.img.jpg"); 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; 
 }
 
 /*Эффективное решение*/
@@ -406,6 +421,11 @@ p {
   display: flex;
 
   justify-content: space-between;
+  cursor: pointer;
+}
+
+.thumb:hover {
+  fill: var(--primary-text-color);
 }
 
 .icon-pic {
@@ -478,7 +498,14 @@ p {
 
 /* Присоединяйтесь */
 
-.desc-text {
+  .desc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}  
+
+.desc {
   font-weight: bold;
 
   line-height: 1.14;
@@ -487,14 +514,26 @@ p {
   color: var(--brand-color);
 }
 
-.desc {
+.desc-text{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  align-items: center;
+
 }
 
-/* .desc-linc{
-  display: flex;
-} */
+.desc-text{
+  fill: var(--brand-color);
+  border: none;
+
+  cursor: pointer;
+  
+}
+
+ .desc-text:hover{
+  fill: var(--primary-text-color);
+  
+} 
+
 
 /*ПАРТФОЛИО-html*/
 /*Кнопки*/
