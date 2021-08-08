@@ -13,6 +13,8 @@
   --color-border: #ececec;
   --color-fill: rgba(245, 244, 250, 1);
   --fill-color: #afb1b8;
+  --color-grey: rgba(47, 48, 58, 0.4);
+  --color-white: rgba(255, 255, 255, 0, 1);
 }
 
 body {
@@ -154,16 +156,15 @@ p {
 
 /* Мыло и телефон */
 
-.icon-item{
-  margin-left: 10px;
-  cursor:pointer;
+.icon-item {
+  margin-right: 10px;
+  cursor: pointer;
   fill: var(--back-color);
 }
 
-.icon-item:hover{
+.icon-item:hover {
   fill: var(--primary-text-color);
 }
-
 
 /*info@devstudio.com*/
 .information {
@@ -184,23 +185,32 @@ p {
 .hero {
   text-align: center;
   padding: 200px 0;
-   
-  background-color: var(--background-color);  
+
+  background-color: var(--background-color);
 }
 
 .hero {
   max-width: 1600px;
-  height: 480px;
+
+  display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
 
-  /* background-image: linear-gradient( rgba(47, 48, 58, 0,4);  */
 
-  background-image: url("../images/zaglavnay.img.jpg"); 
+  background-image: url("../images/zaglavnay.img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
 }
+/* .hero:nth-child(1) {
+ background-image: linear-gradient(
+    to bottom,
+    var(--color-grey),
+   url("./images/zaglavnay.img.jpg")
+   
+   );  
+} */
 
 /*Эффективное решение*/
 .hero-contaner {
@@ -245,6 +255,7 @@ p {
 .list-item::before {
   display: block;
   content: "";
+  width: 270px;
   height: 120px;
 
   margin-bottom: 30px;
@@ -252,6 +263,7 @@ p {
 
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 4px;
 
   /* outline: 1px solid red; */
 }
@@ -279,13 +291,14 @@ p {
 }
 
 .feature-list .item {
-  width: 250px;
+ width: 270px; 
+  
 }
 
 /*feature-list*/
 .feature-list {
   display: flex;
-  flex-wrap: wrap;
+  
   align-items: center;
   justify-content: space-between;
 }
@@ -417,15 +430,17 @@ p {
 }
 
 /* Постоянные клиены */
+.thumb:hover,
+ .thumb-icon:hover{
+  fill: var(--primary-text-color);
+  border-color: var(--primary-text-color);
+} 
+
 .thumb {
   display: flex;
 
   justify-content: space-between;
   cursor: pointer;
-}
-
-.thumb:hover {
-  fill: var(--primary-text-color);
 }
 
 .icon-pic {
@@ -498,42 +513,63 @@ p {
 
 /* Присоединяйтесь */
 
-  .desc{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}  
-
 .desc {
   font-weight: bold;
 
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
   color: var(--brand-color);
 }
 
-.desc-text{
+.footer-container{
   display: flex;
-  justify-content:space-between;
-  align-items: center;
-
+  align-items: flex-start;
 }
 
-.desc-text{
+.footer-left-side{
+  margin-left: 70px;
+}
+
+
+/* .desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
+/* .desc-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .desc-text{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+
+  /* background-image: url("./images/icons.svg#icon-instagram"); */
+
+/* fill: var(--color-white);
+  background-size: 20px;
+  border-radius: 50%;
+} */
+
+/* .desc-text {
   fill: var(--brand-color);
   border: none;
 
   cursor: pointer;
-  
-}
+} */
 
- .desc-text:hover{
+/* .desc-text:hover {
   fill: var(--primary-text-color);
-  
-} 
-
+} */
 
 /*ПАРТФОЛИО-html*/
 /*Кнопки*/
@@ -563,6 +599,10 @@ p {
   padding: 6px 22px;
 }
 
+.button:hover{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 /* Картинки */
 
 /*pic-container*/
@@ -571,6 +611,8 @@ p {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-right: -30px;
+
+  cursor: pointer;
 }
 
 .pic-text {
@@ -580,10 +622,17 @@ p {
 
   background: var(--brand-color);
   border: 1px solid var(--color-strip);
+
 }
 
 .warpper-text {
   padding: 24px 20px;
+}
+
+.pic-container:hover,
+.pic-text:hover{
+border-color: var(--primary-text-color);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
 }
 
 /*Тексты заголовков 2-й лист*/
