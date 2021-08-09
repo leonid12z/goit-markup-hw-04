@@ -14,7 +14,7 @@
   --color-fill: rgba(245, 244, 250, 1);
   --fill-color: #afb1b8;
   --color-grey: rgba(47, 48, 58, 0.4);
-  --color-white: rgba(255, 255, 255, 0, 1);
+  --color-white: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -197,20 +197,11 @@ p {
   margin-left: auto;
   margin-right: auto;
 
-
   background-image: url("../images/zaglavnay.img.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
 }
-/* .hero:nth-child(1) {
- background-image: linear-gradient(
-    to bottom,
-    var(--color-grey),
-   url("./images/zaglavnay.img.jpg")
-   
-   );  
-} */
 
 /*Эффективное решение*/
 .hero-contaner {
@@ -291,14 +282,13 @@ p {
 }
 
 .feature-list .item {
- width: 270px; 
-  
+  width: 270px;
 }
 
 /*feature-list*/
 .feature-list {
   display: flex;
-  
+
   align-items: center;
   justify-content: space-between;
 }
@@ -431,10 +421,10 @@ p {
 
 /* Постоянные клиены */
 .thumb:hover,
- .thumb-icon:hover{
+.thumb-icon:hover {
   fill: var(--primary-text-color);
   border-color: var(--primary-text-color);
-} 
+}
 
 .thumb {
   display: flex;
@@ -523,53 +513,45 @@ p {
   color: var(--brand-color);
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   align-items: flex-start;
 }
 
-.footer-left-side{
+.footer-left-side {
   margin-left: 70px;
 }
 
-
-/* .desc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-
-
-/* .desc-text {
+.desc-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-} */
 
-/* .desc-text{
-  display: inline-block;
-  height: 50px;
-  width: 50px;
+  margin-top: 20px;
+}
+
+.desc-list {
+  display: flex;
+  justify-content: center;
   align-items: center;
 
-  /* background-image: url("./images/icons.svg#icon-instagram"); */
+  margin-right: 10px;
 
-/* fill: var(--color-white);
-  background-size: 20px;
+  width: 44px;
+  height: 44px;
+
   border-radius: 50%;
-} */
-
-/* .desc-text {
-  fill: var(--brand-color);
   border: none;
 
-  cursor: pointer;
-} */
+  background: var(--color-white);
+  fill: var(--brand-color);
 
-/* .desc-text:hover {
-  fill: var(--primary-text-color);
-} */
+  cursor: pointer;
+}
+
+.desc-list:hover {
+  background: var(--primary-text-color);
+}
 
 /*ПАРТФОЛИО-html*/
 /*Кнопки*/
@@ -599,8 +581,9 @@ p {
   padding: 6px 22px;
 }
 
-.button:hover{
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.button:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Картинки */
@@ -622,17 +605,18 @@ p {
 
   background: var(--brand-color);
   border: 1px solid var(--color-strip);
-
 }
 
 .warpper-text {
   padding: 24px 20px;
 }
 
-.pic-container:hover,
-.pic-text:hover{
-border-color: var(--primary-text-color);
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+/* .pic-container:hover, */
+.pic-text:hover {
+  border-color: var(--primary-text-color);
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*Тексты заголовков 2-й лист*/
