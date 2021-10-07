@@ -15,7 +15,7 @@
   --fill-color: #afb1b8;
   --color-grey: rgba(47, 48, 58, 0.4);
   --color-white: rgba(255, 255, 255, 0.1);
-  --color-gradient:#C4C4C4;
+  --color-gradient: #c4c4c4;
 }
 
 body {
@@ -39,8 +39,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-  /* outline: 1px solid tomato;*/
 }
 
 /*point Убрать точки*/
@@ -104,7 +102,6 @@ p {
 
 /*Студия,Портфолио,Контакты*/
 .nav_list .item {
-  /*outline: 1px solid tomato;*/
   margin-right: 50px;
 }
 
@@ -129,7 +126,7 @@ p {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* or 119% */
+
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -156,7 +153,6 @@ p {
 }
 
 /* Мыло и телефон */
-
 .icon-item {
   margin-right: 10px;
   cursor: pointer;
@@ -186,33 +182,22 @@ p {
 .hero {
   text-align: center;
   padding: 200px 0;
-
-  /* background-color: var(--background-color); */
 }
 
 .hero {
   max-width: 1600px;
-
   margin-left: auto;
   margin-right: auto;
-
-  background-image: linear-gradient(to right, 
-
-   rgba(196, 196, 196, 1),  
-
-   rgba(47, 48, 58, 0.4) 
-   
-  ), 
-  
-  url("../images/zaglavnay.img.jpg");
-   
- /* outline: 1px solid black; */
-
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/zaglavnay.img.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;  
+  background-size: cover;
 }
-
 
 /*Эффективное решение*/
 .hero-contaner {
@@ -227,7 +212,6 @@ p {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -244,7 +228,7 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /*or 187% */
+
   letter-spacing: 0.06em;
 
   background-color: var(--primary-text-color);
@@ -266,8 +250,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
-
-  /* outline: 1px solid red; */
 }
 
 /* Значки-svg+hover */
@@ -307,9 +289,7 @@ p {
 /*Tekst h2-h3*/
 .section-desc {
   margin-bottom: 10px;
-
   font-size: 14px;
-  /* or 114% */
 
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -321,7 +301,6 @@ p {
 .section-text {
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
 
   color: var(--back-color);
@@ -335,13 +314,12 @@ p {
 }
 
 .section-title {
-  margin-bottom: 50px;
-
   font-weight: bold;
+  text-align: center;
+
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
-  /* or 116% */
-  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
@@ -367,7 +345,6 @@ p {
   justify-content: center;
 
   margin-top: 16px;
-  /* outline: 1px solid red;   */
 }
 
 .userpic .userpic-our:not(:last-child) {
@@ -409,12 +386,11 @@ p {
 }
 
 .section-subtitle {
-  margin-bottom: 10px;
-
-  line-height: 1.18;
-  /*or 118%*/
-  letter-spacing: 0.03em;
   text-align: center;
+
+  margin-bottom: 10px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 
   color: var(--accent-color);
 }
@@ -424,7 +400,6 @@ p {
 
   font-size: 16px;
   line-height: 1.18;
-  /* or 118% */
   letter-spacing: 0.03em;
 
   color: var(--back-color);
@@ -439,7 +414,6 @@ p {
 
 .thumb {
   display: flex;
-
   justify-content: space-between;
   cursor: pointer;
 }
@@ -483,7 +457,6 @@ p {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* or 119% */
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
@@ -492,9 +465,7 @@ p {
 /*г.Киев пр-т ЛесиУкр*/
 .address-text {
   display: block;
-
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
 
   color: var(--brand-color);
@@ -504,9 +475,7 @@ p {
 .inform {
   display: block;
   margin: 0;
-
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
 
   color: var(--color-backs);
@@ -516,7 +485,6 @@ p {
 
 .desc {
   font-weight: bold;
-
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -576,7 +544,6 @@ p {
 .button {
   font-size: 16px;
   line-height: 1.62;
-  /* or 162% */
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -598,7 +565,6 @@ p {
 }
 
 /* Картинки */
-
 /*pic-container*/
 .pic-container {
   display: flex;
@@ -624,7 +590,6 @@ p {
 
 /* .pic-container:hover, */
 .pic-text:hover {
-
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -637,7 +602,6 @@ p {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  /*or 200% */
   letter-spacing: 0.06em;
 
   color: var(--accent-color);
@@ -647,7 +611,6 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
-  /* or 187% */
   letter-spacing: 0.03em;
 
   color: var(--back-color);
