@@ -69,6 +69,11 @@ p {
   display: block;
 }
 
+ /* hover-kontaktam */
+.item:hover .icon-item {
+  fill: var(--primary-text-color);
+} 
+
 /*hover-kontaktam*/
 .information:hover,
 .telefone:hover {
@@ -86,8 +91,13 @@ p {
   border-bottom: 1px solid var(--color-border);
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 /*Шапка студия,портфолио,контакты ховер*/
-.nav_item:hover {
+.nav-item:hover {
   color: var(--primary-text-color);
 }
 
@@ -95,18 +105,16 @@ p {
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 /* Шапка Студия,Портфолио,Контакты */
-.nav_list {
+.nav-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: 93px;
 }
 
 /*Студия,Портфолио,Контакты*/
-.nav_list .item {
+.nav-list .item {
   margin-right: 50px;
 }
 
@@ -114,6 +122,7 @@ p {
 .auth-nav {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .auth-nav .item {
@@ -121,7 +130,7 @@ p {
 }
 
 /*Логотип синий*/
-.nav_logo {
+.nav-logo {
   color: var(--primary-text-color);
 }
 
@@ -137,7 +146,7 @@ p {
 }
 
 /*Студия Портфолио*/
-.nav_item_list {
+.nav-item-list {
   font-weight: 500;
   display: block;
   padding-top: 32px;
@@ -147,7 +156,7 @@ p {
 }
 
 /*Портфолио*/ /*Котакты*/
-.nav_item {
+.nav-item {
   font-weight: 500;
   display: block;
   padding-top: 32px;
@@ -454,7 +463,7 @@ p {
   font-style: normal;
 }
 
-.nav_logo {
+.nav-logo {
   display: block;
 
   font-family: "Raleway";
@@ -606,7 +615,7 @@ p {
 /*Лиметед*/ /*ЛАБ*/ /*Гровинг*/
 .subject {
   font-weight: bold;
-   margin-top: 4px;
+  margin-top: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -623,6 +632,6 @@ p {
   color: var(--back-color);
 }
 
-.logo_nav {
+.logo-nav {
   color: var(--brand-color);
 }
