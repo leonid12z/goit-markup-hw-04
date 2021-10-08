@@ -296,10 +296,10 @@ p {
 /*feature-list*/
 .feature-list {
   display: flex;
-
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;  
 }
+
 
 /*Tekst h2-h3*/
 .section-desc {
