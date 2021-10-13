@@ -69,17 +69,6 @@ p {
   display: block;
 }
 
- /* hover-kontaktam */
-.item:hover .icon-item {
-  fill: var(--primary-text-color);
-} 
-
-/*hover-kontaktam*/
-.information:hover,
-.telefone:hover {
-  color: var(--primary-text-color);
-}
-
 /*Все ховер фокус*/
 .button:hover,
 .button:focus {
@@ -175,21 +164,21 @@ p {
 
 .icon-item:hover {
   fill: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 
-/*info@devstudio.com*/
-.information {
-  font-weight: 500;
-  color: var(--back-color);
-}
-
-/*tel+380961111111*/
-.telefone {
+/* info@devstudio.com tel+380961111111*/
+.icon-item {
   font-weight: 500;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
   color: var(--back-color);
+}
+
+.envelope,
+.vector {
+  margin-right: 10px;
 }
 
 /* Класс hero */
@@ -289,17 +278,18 @@ p {
   padding: 94px 0;
 }
 
+/*feature-list*/
+.feature-list {
+  display: flex;
+}
+
 .feature-list .item {
   width: 270px;
 }
 
-/*feature-list*/
-.feature-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;  
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
 }
-
 
 /*Tekst h2-h3*/
 .section-desc {
@@ -323,8 +313,10 @@ p {
 /*Изображение pic*/
 .pic {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.pic-img {
+  margin-right: 30px;
 }
 
 .section-title {
@@ -350,8 +342,10 @@ p {
 
 .pic-our {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.pic-our .pic-team:not(:last-child) {
+  margin-right: 30px;
 }
 
 .userpic {
@@ -420,24 +414,15 @@ p {
 }
 
 /* Постоянные клиены */
-.thumb:hover,
-.thumb-icon:hover {
+
+.thumb-icon:hover,
+.thumb:hover {
   fill: var(--primary-text-color);
   border-color: var(--primary-text-color);
 }
 
 .thumb {
   display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.icon-pic {
-  cursor: pointer;
-  justify-content: center;
-  padding: 15px 0;
-
-  fill: var(--fill-color);
 }
 
 .thumb-icon {
@@ -446,6 +431,22 @@ p {
 
   border: 1px solid var(--fill-color);
   border-radius: 4px;
+}
+
+.thumb .thumb-icon:not(:last-child) {
+  margin-right: 30px;
+}
+
+.thumb-icon {
+  cursor: pointer;
+  fill: var(--fill-color);
+}
+
+.icon-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 /* Нижняя часть информации */
@@ -512,7 +513,7 @@ p {
 
 .footer-container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .footer-left-side {
@@ -532,8 +533,6 @@ p {
   justify-content: center;
   align-items: center;
 
-  margin-right: 10px;
-
   width: 44px;
   height: 44px;
 
@@ -544,6 +543,10 @@ p {
   fill: var(--brand-color);
 
   cursor: pointer;
+}
+
+.desc-list:not(:last-child) {
+  margin-right: 10px;
 }
 
 .desc-list:hover {
@@ -566,9 +569,10 @@ p {
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
+  background-color: var(--color-brand);
 
   border: none;
-  margin-right: 8px; 
+  margin-right: 8px;
   cursor: pointer;
 
   display: inline-block;
