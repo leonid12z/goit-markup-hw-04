@@ -169,6 +169,8 @@ p {
 
 /* info@devstudio.com tel+380961111111*/
 .icon-item {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.71;
 
@@ -446,7 +448,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
+  height: 100%;
 }
 
 /* Нижняя часть информации */
