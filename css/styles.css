@@ -528,7 +528,7 @@ p {
   margin-top: 20px;
 }
 
-.desc-list {
+.desc-linc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -549,7 +549,7 @@ p {
   margin-right: 10px;
 }
 
-.desc-list:hover {
+.desc-linc:hover {
   background: var(--primary-text-color);
 }
 
